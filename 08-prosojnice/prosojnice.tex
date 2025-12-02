@@ -9,6 +9,11 @@
 % Namig: z iskanjem po datotekah (Ctrl+Shift+F oz. Cmd+Shift+F) 
 % poiščite niz `{definicija}' ali niz `{izrek}'.
 
+\usepackage{tikz}
+\usetikzlibrary{math}
+\usepackage{pgfplots}
+\usepgfplotslibrary{external}
+\usepackage{array}
 % Definicija okolij izrek, posledica
 {\theoremstyle{plain}
 \newtheorem{izrek}{Izrek}[section]
@@ -20,6 +25,10 @@
 \newtheorem{definicija}[izrek]{Definicija}
 \newtheorem{vaja}[izrek]{Vaja}
 }
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
 
 \begin{document}
 
@@ -61,9 +70,12 @@
 \input{prosojnice/3-analiza-logika-mnozice.tex}
 
 \section{Stolpci in slike}
+\input{prosojnice/4-stolpci-slike.tex}
 
 \section{Paket \texttt{beamer} in tabele}
+\input{prosojnice/5-beamer-tabele.tex}
 
 \section[Matematika, 2. del\\\large{Zaporedja, algebra, grupe}]{Matematika, 2. del}
+\input{prosojnice/6-zaporedja-algebra-grupe.tex}
 
 \end{document}
